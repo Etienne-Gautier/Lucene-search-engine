@@ -1,0 +1,37 @@
+<!doctype html>
+<HTML>
+<HEAD>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script>
+        function search(){
+            document.getElementById("result").innerHTML = myJavaBridge.searchQuery(document.getElementById('search-bar').value);
+        }
+    </script>
+</HEAD>
+<BODY>
+<div>
+    <table>
+        <thead>
+        <tr>
+            <th></th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+                <input class="form-control" type="text" placeholder="Search wikipedia" id="search-bar">
+            </td>
+            <td>
+                <button type="button" onclick="search();">Search</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <ol id="result"></ol>
+</div>
+
+</BODY>
+</HTML>
